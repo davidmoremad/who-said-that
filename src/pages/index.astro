@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import QuoteCard from '../components/QuoteCard.astro';
+import ScoreDisplay from '../components/ScoreDisplay.astro';
+import { quotes } from '../data/quotes';
+
+// Get initial random quote
+const randomIndex = Math.floor(Math.random() * quotes.length);
+const initialQuote = quotes[randomIndex];
+---
+
+<Layout title="Literary Quotes - Who Said It?">
+  <div class="min-h-screen flex flex-col">
+    <main class="flex-grow flex flex-col items-center justify-center p-4">
+      <ScoreDisplay score={0} />
+      
+      <h1 class="text-4xl md:text-5xl font-serif font-black text-center mb-2 tracking-tight">
+        ¿Quién lo dijo?
+      </h1>
+      <p class="text-lg text-ink/70 mb-12 font-serif italic text-center">
+        Adivina quién dijo estas frases célebres
+      </p>
+      
+      <QuoteCard
+        quote={initialQuote.text}
+        options={initialQuote.options}
+      />
+    </main>
+
+    <footer class="py-4 text-center text-ink/60 border-t border-ink/10">
+      <p class="font-serif italic">
+        Points increase with each correct answer!
+      </p>
+    </footer>
+  </div>
+</Layout>

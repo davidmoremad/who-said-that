@@ -1,0 +1,29 @@
+---
+interface Props {
+  score: number;
+}
+
+const { score } = Astro.props;
+---
+
+<div class="fixed text-2xl top-4 right-4 bg-ink text-parchment rounded-full font-serif score-display px-4 pt-2 pb-3">
+  <span>Puntos: {score}</span>
+</div>
+
+<style>
+  .score-zoom {
+    animation: zoom 0.5s ease-out;
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+</style>

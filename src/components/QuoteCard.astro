@@ -1,0 +1,121 @@
+---
+import { quotes } from '../data/quotes';
+
+interface Props {
+  quote: string;
+  options: string[];
+}
+
+const { quote, options } = Astro.props;
+---
+
+<div class="max-w-2xl mx-auto py-12 px-16 bg-white/40 backdrop-blur-sm rounded-lg shadow-md border border-ink/10">
+  
+  <blockquote class="mb-8 text-2xl font-serif italic text-center text-inklight">
+    {quote}
+  </blockquote>
+  
+  <div class="flex flex-col gap-4">
+    {options.map((option) => (
+      <button
+        class="w-full py-3 px-6 text-lg font-serif border-2 border-ink/20 rounded-md
+               hover:bg-inklight hover:text-parchment transition-colors duration-200
+               focus:outline-none focus:ring-2 focus:ring-ink/50"
+        data-answer={option}
+      >
+        {option}
+      </button>
+    ))}
+  </div>
+</div>
+
+<script>
+  import { quotes } from '../data/quotes';
+  
+  let score = 0;
+  let correctAnswers = 0;
+  let availableQuotes = [...quotes];
+  let currentQuote = availableQuotes[Math.floor(Math.random() * availableQuotes.length)];
+
+  function calculatePoints(correctAnswersCount: number): number {
+    const basePoints = 100;
+    return Math.round(basePoints * Math.pow(1.2, correctAnswersCount));
+  }
+
+  function updateScore(correct: boolean) {
+    if (correct) {
+      const points = calculatePoints(correctAnswers);
+      score += points;
+      correctAnswers++;
+      
+      const scoreDisplay = document.querySelector('.score-display');
+      if (scoreDisplay) {
+        scoreDisplay.classList.add('score-zoom');
+        scoreDisplay.textContent = `Score: ${score}`;
+        setTimeout(() => {
+          scoreDisplay.classList.remove('score-zoom');
+        }, 500);
+      }
+    }
+  }
+
+  function getRandomQuote() {
+    if (availableQuotes.length === 0) {
+      availableQuotes = [...quotes];
+    }
+    const randomIndex = Math.floor(Math.random() * availableQuotes.length);
+    const quote = availableQuotes[randomIndex];
+    availableQuotes.splice(randomIndex, 1);
+    return quote;
+  }
+
+  function updateQuote() {
+    currentQuote = getRandomQuote();
+    
+    const quoteElement = document.querySelector('blockquote');
+    if (quoteElement) {
+      quoteElement.textContent = `"${currentQuote.text}"`;
+    }
+
+    const buttons = document.querySelectorAll('button[data-answer]');
+    const options = [...currentQuote.options];
+    
+    // Shuffle the options array
+    for (let i = options.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [options[i], options[j]] = [options[j], options[i]];
+    }
+
+    buttons.forEach((btn, index) => {
+      btn.classList.remove('pointer-events-none', 'bg-green-700', 'bg-red-700', 'text-parchment');
+      btn.textContent = options[index];
+      btn.dataset.answer = options[index];
+    });
+  }
+
+  document.querySelectorAll('button[data-answer]').forEach(button => {
+    button.addEventListener('click', (e) => {
+      const target = e.target as HTMLButtonElement;
+      const selectedAnswer = target.dataset.answer;
+      const correctAnswer = currentQuote.correct;
+      const isCorrect = selectedAnswer === correctAnswer;
+
+      document.querySelectorAll('button[data-answer]').forEach(btn => {
+        btn.classList.add('pointer-events-none');
+        if (btn.dataset.answer === correctAnswer) {
+          btn.classList.add('bg-green-700', 'text-parchment');
+        }
+      });
+
+      if (!isCorrect) {
+        target.classList.add('bg-red-700', 'text-parchment');
+      }
+
+      updateScore(isCorrect);
+
+      setTimeout(updateQuote, 1000);
+    });
+  });
+
+  updateQuote();
+</script></content>
