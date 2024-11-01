@@ -267,7 +267,7 @@ export const quotes: Quote[] = [
     correct: "Mark Twain",
     options: [
       "Mark Twain",
-      "George Carlin"
+      "Gila"
     ]
   },
   {
@@ -275,7 +275,7 @@ export const quotes: Quote[] = [
     correct: "Groucho Marx",
     options: [
       "Groucho Marx",
-      "Rodney Dangerfield"
+      "Homer Simpson"
     ]
   },
   {
@@ -323,7 +323,7 @@ export const quotes: Quote[] = [
     correct: "Bill Murray",
     options: [
       "Bill Murray",
-      "DiCaprio"
+      "Leonardo DiCaprio"
     ]
   },
   {
@@ -379,7 +379,7 @@ export const quotes: Quote[] = [
     correct: "Friedrich Nietzsche",
     options: [
       "Friedrich Nietzsche",
-      "Dory (Finding Nemo)"
+      "Dory (Buscando a Nemo)"
     ]
   },
   {
@@ -619,7 +619,7 @@ export const quotes: Quote[] = [
     correct: "Elon Musk",
     options: [
       "Elon Musk",
-      "Nick Cannon"
+      "Julian Muñoz"
     ]
   },
   {
@@ -627,7 +627,7 @@ export const quotes: Quote[] = [
     correct: "Donald Trump",
     options: [
       "Donald Trump",
-      "Richie Rich"
+      "Dan Bilzerian"
     ]
   },
   {
@@ -920,9 +920,9 @@ export const quotes: Quote[] = [
   },
   {
     text: "Voy a matar a Moe, wiiiii… Voy a matar a Moe, wiiiii…",
-    correct: "Home Simpson",
+    correct: "Homer Simpson",
     options: [
-      "Home Simpson",
+      "Homer Simpson",
       "Bart Simpson"
     ]
   },
@@ -1079,7 +1079,7 @@ export const quotes: Quote[] = [
     ]
   },
   {
-    text: "No estamos en una crisis económica",
+    text: "No estamos en una crisis económica (2008)",
     correct: "José Luis Rodríguez Zapatero",
     options: [
       "José Luis Rodríguez Zapatero",
