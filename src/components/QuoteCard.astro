@@ -19,7 +19,7 @@ const { quote, options } = Astro.props;
     {options.map((option) => (
       <button
         class="w-full py-3 px-6 text-lg font-serif border-2 border-ink/20 rounded-md
-               hover:bg-inklight hover:text-parchment transition-colors duration-200
+               lg:hover:bg-inklight lg:hover:text-parchment transition-colors duration-200
                focus:outline-none focus:ring-2 focus:ring-ink/50"
         data-answer={option}
       >
@@ -43,12 +43,12 @@ const { quote, options } = Astro.props;
   }
 
   function updateScore(correct: boolean) {
-    if (correct) {
+    const scoreDisplay = document.querySelector('.score-display');
+      if (correct) {
       const points = calculatePoints(correctAnswers);
       score += points;
       correctAnswers++;
       
-      const scoreDisplay = document.querySelector('.score-display');
       if (scoreDisplay) {
         scoreDisplay.classList.add('score-zoom');
         scoreDisplay.textContent = `Score: ${score}`;
@@ -56,6 +56,10 @@ const { quote, options } = Astro.props;
           scoreDisplay.classList.remove('score-zoom');
         }, 500);
       }
+    }
+    else {
+      score = 0
+      scoreDisplay.textContent = `Score: ${score}`;
     }
   }
 
@@ -110,12 +114,14 @@ const { quote, options } = Astro.props;
       if (!isCorrect) {
         target.classList.add('bg-red-700', 'text-parchment');
       }
-
       updateScore(isCorrect);
 
       setTimeout(updateQuote, 1000);
+
     });
   });
 
   updateQuote();
-</script></content>
+</script>
+
+</content>
