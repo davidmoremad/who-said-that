@@ -45,23 +45,25 @@ const { quote, options } = Astro.props;
   function updateScore(correct: boolean) {
     const scoreDisplay = document.querySelector('.score-display');
       if (correct) {
-      const points = calculatePoints(correctAnswers);
-      score += points;
-      correctAnswers++;
-      
-      if (scoreDisplay) {
-        scoreDisplay.classList.add('score-zoom');
-        scoreDisplay.textContent = `Score: ${score}`;
-        setTimeout(() => {
-          scoreDisplay.classList.remove('score-zoom');
-        }, 500);
+        const points = calculatePoints(correctAnswers);
+        score += points;
+        correctAnswers++;
+        
+        if (scoreDisplay) {
+          scoreDisplay.classList.add('score-zoom');
+          scoreDisplay.textContent = `Score: ${score}`;
+          setTimeout(() => {
+            scoreDisplay.classList.remove('score-zoom');
+          }, 500);
+        }
       }
-    }
-    else {
-      score = 0
-      correctAnswers = 0;
-      scoreDisplay.textContent = `Score: ${score}`;
-    }
+      else {
+        score = 0;
+        correctAnswers = 0;
+        if (scoreDisplay) {
+          scoreDisplay.textContent = `Score: ${score}`;
+        }
+      }
   }
 
   function getRandomQuote() {

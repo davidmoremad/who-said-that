@@ -643,7 +643,7 @@ export const quotes: Quote[] = [
     correct: "Donald Trump",
     options: [
       "Donald Trump",
-      "Sacha Baron Cohen"
+      "Kanye West"
     ]
   },
   {
@@ -980,6 +980,126 @@ export const quotes: Quote[] = [
     options: [
       "Emilio (Aquí no hay quien viva)",
       "Sheldon Cooper"
+    ]
+  },
+  {
+    text: "Váyase, señor Cuesta. ¡Váyase!",
+    correct: "Concha (Aquí no hay quien viva)",
+    options: [
+      "Concha (Aquí no hay quien viva)",
+      "Mauri (Aquí no hay quien viva)"
+    ]
+  },
+  {
+    text: "Dientes, dientes, que es lo que les jode.",
+    correct: "Isabel Pantoja",
+    options: [
+      "Isabel Pantoja",
+      "Shakira"
+    ]
+  },
+  {
+    text: "¡Que te calles, Karmele!",
+    correct: "Jesús Mariñas",
+    options: [
+      "Jesús Mariñas",
+      "Los Morancos"
+    ]
+  },
+  {
+    text: "Te lo resumo en dos palabras: im-presionante",
+    correct: "Jesulín de Ubrique",
+    options: [
+      "Jesulín de Ubrique",
+      "Antonio Recio"
+    ]
+  },
+  {
+    text: "Yo por mi hija ma-to",
+    correct: "Belén Esteban",
+    options: [
+      "Belén Esteban",
+      "Marge Simpson"
+    ]
+  },
+  {
+    text: "¡Se sienten, coño!",
+    correct: "Coronel Tejero",
+    options: [
+      "Coronel Tejero",
+      "Fernando Fernan Gomez"
+    ]
+  },
+  {
+    text: "Me cago en la leche, Merche",
+    correct: "Antonio Alcántara",
+    options: [
+      "Antonio Alcántara",
+      "Jose Mota"
+    ]
+  },
+  {
+    text: "Si hay que ir se va, pero ir pa'na es tontería",
+    correct: "Jose Mota",
+    options: [
+      "Jose Mota",
+      "Miguel de Cervantes"
+    ]
+  },
+  {
+    text: "¿Saben aquel que diu...",
+    correct: "Eugenio",
+    options: [
+      "Eugenio",
+      "Puigdemont"
+    ]
+  },
+  {
+    text: "Españoles, Franco ha muerto",
+    correct: "Arias Navarro",
+    options: [
+      "Arias Navarro",
+      "Pepe Domingo Castaño"
+    ]
+  },
+  {
+    text: "Un café vale 80 céntimos aproximadamente",
+    correct: "José Luis Zapatero",
+    options: [
+      "José Luis Zapatero",
+      "Jeff Bezos"
+    ]
+  },
+  {
+    text: "Bueno, ¿cómo están los máquinas, lo primero de todo?",
+    correct: "David Bisbal",
+    options: [
+      "David Bisbal",
+      "David Bustamante"
+    ]
+  },
+  {
+    text: "No estamos en una crisis económica",
+    correct: "José Luis Rodríguez Zapatero",
+    options: [
+      "José Luis Rodríguez Zapatero",
+      "Emilio Botín"
+    ]
+  },
+  {
+    text: "¿Quieres sentirla en el pecho?",
+    correct: "El Chuky de Cieza",
+    options: [
+      "El Chuky de Cieza",
+      "La Veneno"
+    ]
+  },
+  {
+    text: "La droga es la auténtica salud, el bienestar, la alegría",
+    correct: "Ramón El Vanidoso",
+    options: [
+      "Ramón El Vanidoso",
+      "El Drogas"
     ]
   }
 ]
