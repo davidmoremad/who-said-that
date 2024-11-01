@@ -11,7 +11,7 @@ export const quotes: Quote[] = [
     correct: "René Descartes",
     options: [
       "René Descartes",
-      "Homer Simpson"
+      "Einstein"
     ]
   },
   {
@@ -19,7 +19,7 @@ export const quotes: Quote[] = [
     correct: "Sócrates",
     options: [
       "Sócrates",
-      "Yoda"
+      "Platón"
     ]
   },
   {
@@ -27,7 +27,7 @@ export const quotes: Quote[] = [
     correct: "William Shakespeare",
     options: [
       "William Shakespeare",
-      "Kermit the Frog"
+      "Miguel de Cervantes"
     ]
   },
   {
@@ -251,7 +251,7 @@ export const quotes: Quote[] = [
     correct: "Humphrey Bogart",
     options: [
       "Humphrey Bogart",
-      "Keith Richards"
+      "Charlie Sheen"
     ]
   },
   {
@@ -299,7 +299,7 @@ export const quotes: Quote[] = [
     correct: "Rita Rudner",
     options: [
       "Rita Rudner",
-      "Ellen DeGeneres"
+      "Julian Muñoz"
     ]
   },
   {
@@ -315,7 +315,7 @@ export const quotes: Quote[] = [
     correct: "Kanye West",
     options: [
       "Kanye West",
-      "Gordon Gekko"
+      "Karl Lagerfeld"
     ]
   },
   {
@@ -323,7 +323,7 @@ export const quotes: Quote[] = [
     correct: "Bill Murray",
     options: [
       "Bill Murray",
-      "Simon Cowell"
+      "DiCaprio"
     ]
   },
   {
@@ -595,7 +595,7 @@ export const quotes: Quote[] = [
     correct: "Miguel Gila",
     options: [
       "Miguel Gila",
-      "Robin Hood"
+      "Mariano Rajoy"
     ]
   },
   {
@@ -656,9 +656,9 @@ export const quotes: Quote[] = [
   },
   {
     text: "El pánico por el coronavirus es tonto.",
-    correct: "Elon Musk (2020)",
+    correct: "Elon Musk",
     options: [
-      "Elon Musk (2020)",
+      "Elon Musk",
       "Homer Simpson"
     ]
   },
@@ -667,7 +667,7 @@ export const quotes: Quote[] = [
     correct: "Donald Trump",
     options: [
       "Donald Trump",
-      "Borat"
+      "Mia Khalifa"
     ]
   },
   {
@@ -707,7 +707,7 @@ export const quotes: Quote[] = [
     correct: "Donald Trump",
     options: [
       "Donald Trump",
-      "Gordon Gekko"
+      "Charlie Sheen"
     ]
   },
   {
@@ -715,7 +715,7 @@ export const quotes: Quote[] = [
     correct: "Kanye West",
     options: [
       "Kanye West",
-      "Madonna"
+      "Beyoncé"
     ]
   },
   {
@@ -723,7 +723,7 @@ export const quotes: Quote[] = [
     correct: "Elon Musk",
     options: [
       "Elon Musk",
-      "Doc Brown"
+      "Doc (Regreso al futuro)"
     ]
   },
   {
@@ -787,7 +787,7 @@ export const quotes: Quote[] = [
     correct: "Mariano Rajoy",
     options: [
       "Mariano Rajoy",
-      "Mr. Bean"
+      "Ana Botella"
     ]
   },
   {
@@ -803,7 +803,7 @@ export const quotes: Quote[] = [
     correct: "Mariano Rajoy",
     options: [
       "Mariano Rajoy",
-      "Yogi Berra"
+      "Iñigo Errejón"
     ]
   },
   {
@@ -811,7 +811,7 @@ export const quotes: Quote[] = [
     correct: "Mariano Rajoy",
     options: [
       "Mariano Rajoy",
-      "Michael Scott"
+      "Michael Scott (The Office)"
     ]
   },
   {
@@ -819,7 +819,7 @@ export const quotes: Quote[] = [
     correct: "Mariano Rajoy",
     options: [
       "Mariano Rajoy",
-      "Patrick Star"
+      "Patricia Conde"
     ]
   },
   {
@@ -851,7 +851,7 @@ export const quotes: Quote[] = [
     correct: "Mariano Rajoy",
     options: [
       "Mariano Rajoy",
-      "Ron Burgundy"
+      "Ozzy Osbourne"
     ]
   },
   {
@@ -867,7 +867,7 @@ export const quotes: Quote[] = [
     correct: "Chiquito de la Calzada",
     options: [
       "Chiquito de la Calzada",
-      "SpongeBob SquarePants"
+      "Bob Esponja"
     ]
   },
   {
@@ -893,5 +893,93 @@ export const quotes: Quote[] = [
       "Adolf Hitler",
       "Napoleon Bonaparte"
     ]
+  },
+  {
+    text: "Tendrá todo el dinero del mundo, pero hay algo que nunca podrá comprar… un dinosaurio",
+    correct: "Homer Simpson",
+    options: [
+      "Homer Simpson",
+      "Jeff Bezos"
+    ]
+  },
+  {
+    text: "Hijos, os habéis esforzado. ¿Para qué? Para hacer el ridículo. La moraleja es: no os esforcéis.",
+    correct: "Homer Simpson",
+    options: [
+      "Homer Simpson",
+      "Tim Burton"
+    ]
+  },
+  {
+    text: "Me preguntaba si Dios existía, ahora ya lo sé, soy yo.",
+    correct: "Homer Simpson",
+    options: [
+      "Homer Simpson",
+      "Kanye West"
+    ]
+  },
+  {
+    text: "Voy a matar a Moe, wiiiii… Voy a matar a Moe, wiiiii…",
+    correct: "Home Simpson",
+    options: [
+      "Home Simpson",
+      "Bart Simpson"
+    ]
+  },
+  {
+    text: "Yo soy la verdadera definición de un adicto al trabajo",
+    correct: "Kim Kardashian",
+    options: [
+      "Kim Kardashian",
+      "Elon Musk"
+    ]
+  },
+  {
+    text: "Sé muy poco acerca de la actuación. Yo sólo soy un farsante con un talento increíble",
+    correct: "Robert Downey Jr.",
+    options: [
+      "Robert Downey Jr.",
+      "Joey Tribbiani (Friends)"
+    ]
+  },
+  {
+    text: "Tengo un sueño",
+    correct: "Martin Luther King",
+    options: [
+      "Martin Luther King",
+      "Bob Marley"
+    ]
+  },
+  {
+    text: "La inspiración existe, pero tiene que encontrarte trabajando",
+    correct: "Pablo Picasso",
+    options: [
+      "Pablo Picasso",
+      "Jay-Z"
+    ]
+  },
+  {
+    text: "El cielo no se toma por consenso, se toma por asalto",
+    correct: "Pablo Iglesias",
+    options: [
+      "Pablo Iglesias",
+      "Mussolini"
+    ]
+  },
+  {
+    text: "¿Por qué no te callas?",
+    correct: "Juan Carlos I",
+    options: [
+      "Juan Carlos I",
+      "Goku"
+    ]
+  },
+  {
+    text: "Tu no eres fea, eres del montón. O sea, del montón bueno.",
+    correct: "Emilio (Aquí no hay quien viva)",
+    options: [
+      "Emilio (Aquí no hay quien viva)",
+      "Sheldon Cooper"
+    ]
   }
-];
+]
