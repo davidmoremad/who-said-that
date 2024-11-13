@@ -7,14 +7,42 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="A literary quote guessing game" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Adivina quién dijo estas frases célebres">
+    <meta name="keywords" content="juego, citas, personajes famosos, adivinar, trivia, frases célebres">
+    <meta name="author" content="David El Amrani Hernández">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="¿Quién Dijo la Frase?">
+    <meta property="og:description" content="Un juego donde debes adivinar quién dijo estas frases célebres. ¿Listo para el desafío?">
+    <meta property="og:url" content="https://who-said-that.vercel.app/">
+    <meta property="og:image" content="https://dev-by-dave.vercel.app/whosaidthat.png"> <!-- URL de la imagen para el banner -->
+    <meta property="og:image:width" content="480">
+    <meta property="og:image:height" content="160">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="¿Quién lo dijo...?">
+    <meta name="twitter:description" content="Descubre si puedes adivinar quién dijo estas frases célebres. ¿Listo para el desafío?">
+    <meta name="twitter:image" content="https://dev-by-dave.vercel.app/whosaidthat.png"> 
+
+    <!-- Meta de idioma y región -->
+    <meta name="language" content="ES">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Meta adicional para SEO -->
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="/global.css" />
     <meta name="generator" content={Astro.generator} />
+
     <title>{title}</title>
   </head>
   <body class="bg-parchment text-ink min-h-screen">
